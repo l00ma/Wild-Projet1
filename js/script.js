@@ -34,15 +34,33 @@ function goBack() {
     window.history.back()
 }
 
+const btnBack = document.getElementById("goBack");
+btnBack.addEventListener("click", goBack);
 
-//
-function ChangeBtnLeft() {
-    const element = document.querySelector('.buttonRightClass');
-    element.className = 'buttonRightClass:hover';
+
+// css class swapping when mouse in over a button
+function styleOnRight() {
+    const element = document.getElementById("rightButton");
+    element.classList.replace("buttonRightClass", "buttonLeftClass");
+}
+function styleOffRight() {
+    const element = document.getElementById("rightButton");
+    element.classList.replace("buttonLeftClass", "buttonRightClass");
+}
+function styleOnLeft() {
+    const element = document.getElementById("leftButton");
+    element.classList.replace("buttonLeftClass", "buttonRightClass");
+}
+function styleOffLeft() {
+    const element = document.getElementById("leftButton");
+    element.classList.replace("buttonRightClass", "buttonLeftClass");
 }
 
-function ChangeBtnRight() {
-    const element = document.querySelector('.buttonLeftClass');
-    element.className = 'buttonLeftClass:hover';
-}
+const btnLeft = document.getElementById("leftButton");
+btnLeft.addEventListener("mouseenter", styleOnRight);
+btnLeft.addEventListener("mouseleave", styleOffRight);
+
+const btnRight = document.getElementById("rightButton");
+btnRight.addEventListener("mouseenter", styleOnLeft);
+btnRight.addEventListener("mouseleave", styleOffLeft);
 
