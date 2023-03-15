@@ -49,8 +49,19 @@ div.stadium-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../img/camp-nou.jpg") center center/cover no-repeat;
     min-height: 576px;
+}
+
+div.stadium-camp-container {
+    background: url("../img/camp-nou.jpg") center center/cover no-repeat;
+}
+
+div.stadium-bomb-container {
+    background: url("../img/La_Bombonera._-_panoramio.jpg") center center/cover no-repeat;
+}
+
+div.stadium-oldt-container {
+    background: url("../img/old_trafford.jpg") center center/cover no-repeat;
 }
 
 div>div.stadium-title-text {
