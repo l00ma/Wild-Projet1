@@ -55,6 +55,10 @@ p {
     min-height: 576px;
 }
 
+section.stadium-home-container {
+    background: url("../img/background2.jpg") center center/cover no-repeat;
+}
+
 div.stadium-camp-container {
     background: url("../img/camp-nou.jpg") center center/cover no-repeat;
 }
@@ -90,11 +94,17 @@ div.stadium-velo-container {
     margin: 0 5px;
 }
 
-.club-image-scaled {
+.image-scaled {
     margin-top: 64px;
     position: relative;
     width: 100%;
     height: 280px;
+}
+
+.club-image-scaled {
+    margin-top: 64px;
+    position: relative;
+    width: 100%;
 }
 
 .buttonLeftClass,
@@ -137,6 +147,12 @@ h1.section-title {
     font-size: 32px;
     color: var(--gray-title);
     text-decoration: underline;
+}
+
+.section-club-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
@@ -198,6 +214,14 @@ section>div#map {
     width: 100%;
 }
 
+.visible-mobile {
+    display: inline;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
 
 @media screen and (min-width: 768px) {
     div>div.stadium-title-text {
@@ -243,5 +267,3 @@ section>div#map {
         display: inline;
     }
 }
-
-
