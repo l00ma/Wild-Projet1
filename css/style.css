@@ -55,6 +55,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 576px;
+}
+
+.home-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url("../img/background2.jpg") center center/cover no-repeat;
     min-height: 576px;
 }
@@ -66,29 +73,54 @@ ul {
     margin: 0;
 }
 
-/* Style css */
+/*style*/
 
-header.stadium-header-container {
-    height: 58px;
-    padding: 8px 16px 8px 16px;
+
+footer {
+    text-align: center;
+    padding: 5px;
     background-color: var(--primary);
-    display: flex;
-    justify-content: space-between;
+    color: var(--background);
 }
 
-div.stadium-title-container {
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+.stadium-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../img/camp-nou.jpg") center center/cover no-repeat;
     min-height: 576px;
 }
 
-div>div.stadium-title-text {
+section.stadium-home-container {
+    background: url("../img/background2.jpg") center center/cover no-repeat;
+}
+
+div.stadium-camp-container {
+    background: url("../img/camp-nou.jpg") center center/cover no-repeat;
+}
+
+div.stadium-bomb-container {
+    background: url("../img/La_Bombonera._-_panoramio.jpg") center center/cover no-repeat;
+}
+
+div.stadium-velo-container {
+    background: url("../img/velo.background.jpg") center center/cover no-repeat;
+}
+
+.stadium-title-text {
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 64px;
     line-height: 95px;
     text-align: center;
@@ -117,19 +149,82 @@ div.info-container {
     margin: 0 21px;
 }
 
+
+.image-scaled {
+    margin-top: 64px;
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+
+.club-image-scaled {
+    margin-top: 64px;
+    position: relative;
+    width: 100%;
+}
+
+.buttonLeftClass,
+.buttonRightClass {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    width: 173px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: var(--primary);
+    padding-top: 5px;
+}
+
+.buttonLeftClass {
+    color: var(--background);
+    background: var(--background-btn);
+}
+
+.buttonRightClass {
+    color: var(--background-btn);
+    background: var(--background);
+}
+
+.section-buttons {
+    margin: 64px 0 64px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 h1.section-title {
     margin: 64px 0 64px 0;
     text-align: center;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 32px;
+    color: var(--gray-title);
+    text-decoration: underline;
 }
 
-h1.section-title>p {
-    text-align: justify;
-    text-justify: inter-word;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+.section-club-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.buttonLeftClass:hover {
+    background: var(--background);
+    color: var(--background-btn);
+}
+
+.buttonRightClass:hover {
+    background: var(--background-btn);
+    color: var(--background);
+}
+
+div.info-container {
+    margin: 0 21px;
 }
 
 section>div.videoWrapper {
@@ -146,11 +241,12 @@ section>div.videoWrapper iframe {
     height: 100%;
 }
 
-section>div#map {
-    margin: auto;
-    /* height is mandatory for map*/
-    height: 250px;
-    width: 100%;
+header.stadium-header-container {
+    height: 58px;
+    padding: 8px 16px 8px 16px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
 }
 
 .navBackBtn {
@@ -167,11 +263,11 @@ section>div#map {
     font-weight: 300;
 }
 
-.button {
-    margin: 64px 0 64px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section>div#map {
+    margin: auto;
+    /* height is mandatory for map*/
+    height: 250px;
+    width: 100%;
 }
 
 .buttonLeftClass,
@@ -230,26 +326,56 @@ h1.section-title {
     background: var(--primary);
 }
 
-.buttonRightClass {
-    color: var(--primary);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: var(--background);
+.visible-mobile {
+    display: inline;
 }
 
-.buttonLeftClass:hover {
-    background: var(--background);
-    color: var(--primary);
+.hidden-mobile {
+    display: none;
 }
 
-.buttonRightClass:hover {
-    background: var(--primary);
-    color: var(--background);
-}
 
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: var(--primary);
-    color: var(--background);
+@media screen and (min-width: 768px) {
+    div>div.stadium-title-text {
+        display: flex;
+        flex-direction: row;
+        font-size: 88px;
+    }
+
+    div>div.stadium-title-text>span {
+        padding: 0 15px;
+    }
+
+    h1.section-title {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    h1.club-title {
+        text-align: left;
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    section>div#map {
+        width: 50%;
+    }
+
+    section>div.videoWrapper iframe {
+        left: 12.5%;
+        width: 75%;
+        height: 75%;
+    }
+
+    .visible-mobile {
+        display: none;
+    }
+
+    .hidden-mobile {
+        display: inline;
+    }
 }
