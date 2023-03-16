@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;600&display=swap');
 
 :root {
     --primary: #4682B4;
@@ -115,8 +115,12 @@ div.stadium-velo-container {
     background: url("../img/velo.background.jpg") center center/cover no-repeat;
 }
 
-.stadium-title-text {
 
+div.stadium-oldt-container {
+    background: url("../img/old_trafford.jpg") center center/cover no-repeat;
+}
+
+div>div.stadium-title-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -205,6 +209,7 @@ h1.section-title {
     text-decoration: underline;
 }
 
+
 .section-club-header {
     display: flex;
     justify-content: space-evenly;
@@ -225,6 +230,15 @@ h1.section-title {
 
 div.info-container {
     margin: 0 21px;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 30px;
+
 }
 
 section>div.videoWrapper {
@@ -269,6 +283,26 @@ section>div#map {
     height: 250px;
     width: 100%;
 }
+.section-buttons {
+    margin: 64px 0 64px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-club-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1.club-title {
+    margin: 64px 0 64px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+
+}
 
 .buttonLeftClass,
 .buttonRightClass {
@@ -283,17 +317,16 @@ section>div#map {
     border-width: 3px;
     border-color: var(--primary);
     padding-top: 5px;
+
 }
 
 .buttonLeftClass {
     color: var(--background);
     background: var(--background-btn);
+
 }
 
-.buttonRightClass {
-    color: var(--background-btn);
-    background: var(--background);
-}
+
 
 .section-buttons {
     margin: 64px 0 64px 0;
@@ -313,6 +346,10 @@ h1.section-title {
 }
 
 
+.buttonRightClass {
+    color: var(--background-btn);
+    background: var(--background);
+}
 
 .buttonLeftClass:hover {
     background: var(--background);
@@ -321,9 +358,14 @@ h1.section-title {
 
 .buttonRightClass:hover {
     background: var(--background-btn);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background: var(--primary);
+    color: var(--background);
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--primary);
+    color: var(--background);
 }
 
 .visible-mobile {
@@ -334,6 +376,11 @@ h1.section-title {
     display: none;
 }
 
+.club-image-scaled {
+    margin-top: 64px;
+    position: relative;
+    width: 100%;
+}
 
 @media screen and (min-width: 768px) {
     div>div.stadium-title-text {
