@@ -27,6 +27,8 @@ function initMap(lat, long) {
 //
 // end of openstreetmap code
 //
+
+
 // back button function used on top bar only
 function goBack() {
     window.history.back()
