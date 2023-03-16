@@ -6,10 +6,11 @@
 // latitude and longitude init for each stadium
 const villes = {
     "camp": { "lat": 41.380889, "long": 2.1229284 },
-    "bomb": { "lat": 42.380889, "long": 2.1229284 },
-    "oldt": { "lat": 43.380889, "long": 2.1229284 },
-    "velo": { "lat": 44.380889, "long": 2.1229284 },
+    "bomb": { "lat": -34.6356, "long": -58.3648 },
+    "oldt": { "lat": 53.4630366621161, "long": -2.2917199367373855 },
+    "velo": { "lat": 43.269530121342875, "long": 5.3954688731098 },
 };
+
 let macarte = null;
 // Map init
 function initMap(lat, long) {
@@ -34,15 +35,33 @@ function goBack() {
     window.history.back()
 }
 
+const btnBack = document.getElementById("goBack");
+btnBack.addEventListener("click", goBack);
 
-//
-function ChangeBtnLeft() {
-    const element = document.querySelector('.buttonRightClass');
-    element.className = 'buttonRightClass:hover';
+
+// css class swapping when mouse in over a button
+function styleOnRight() {
+    const element = document.getElementById("rightButton");
+    element.classList.replace("buttonRightClass", "buttonLeftClass");
+}
+function styleOffRight() {
+    const element = document.getElementById("rightButton");
+    element.classList.replace("buttonLeftClass", "buttonRightClass");
+}
+function styleOnLeft() {
+    const element = document.getElementById("leftButton");
+    element.classList.replace("buttonLeftClass", "buttonRightClass");
+}
+function styleOffLeft() {
+    const element = document.getElementById("leftButton");
+    element.classList.replace("buttonRightClass", "buttonLeftClass");
 }
 
-function ChangeBtnRight() {
-    const element = document.querySelector('.buttonLeftClass');
-    element.className = 'buttonLeftClass:hover';
-}
+const btnLeft = document.getElementById("leftButton");
+btnLeft.addEventListener("mouseenter", styleOnRight);
+btnLeft.addEventListener("mouseleave", styleOffRight);
+
+const btnRight = document.getElementById("rightButton");
+btnRight.addEventListener("mouseenter", styleOnLeft);
+btnRight.addEventListener("mouseleave", styleOffLeft);
 
