@@ -39,14 +39,6 @@ p {
     line-height: 30px;
 }
 
-
-.stadium-title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 576px;
-}
-
 .home-title-container {
     display: flex;
     justify-content: center;
@@ -102,8 +94,68 @@ main {
     padding: 20px 0;
 }
 
-div.stadium-home-container {
+.home-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 576px;
+}
+
+div.home-home-container {
     background: url("../img/background2.jpg") center center/cover no-repeat;
+}
+
+.image-scaled {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+.outer {
+    position: relative;
+}
+
+.overlay {
+    display: none;
+}
+
+h1.home-stadium-title {
+    margin-top: 32px;
+    text-align: center;
+    color: var(--gray-title);
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-weight: 600;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+    color: var(--background);
+    -webkit-text-stroke: 1px var(--text-color);
+}
+
+div>div.home-title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    color: var(--background);
+    -webkit-text-stroke: 1px var(--text-color);
+    text-shadow: 8px 8px 7px rgba(0, 0, 0, 0.55);
+}
+
+.stadium-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 576px;
 }
 
 div.stadium-camp-container {
@@ -127,7 +179,7 @@ div>div.stadium-title-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 64px;
     line-height: 95px;
     text-align: center;
@@ -137,8 +189,10 @@ div>div.stadium-title-text {
 }
 
 .main-menu {
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: repeat(4 1fr); */
 }
 
 .club-image-scaled {
@@ -192,6 +246,15 @@ header.stadium-header-container {
     justify-content: space-between;
 }
 
+div.header-button {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+input {
+    height: 100%;
+}
+
 .navBackBtn {
     background-color: var(--background);
     border-radius: 5px;
@@ -221,7 +284,7 @@ h1.club-title {
 }
 
 .section-buttons {
-    margin: 64px 0 64px 0;
+    margin: 32px 0 64px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -294,6 +357,12 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+
+    .main-menu {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
     div>div.stadium-title-text {
         display: flex;
         flex-direction: row;
@@ -301,6 +370,16 @@ footer {
     }
 
     div>div.stadium-title-text>span {
+        padding: 0 5px;
+    }
+
+    div>div.home-title-text {
+        display: flex;
+        flex-direction: row;
+        font-size: 80px;
+    }
+
+    div>div.home-title-text>span {
         padding: 0 5px;
     }
 
@@ -340,8 +419,9 @@ footer {
     .article-container {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        margin: 100px 300px;
         grid-gap: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     .image-article1 {
@@ -352,19 +432,22 @@ footer {
     .image-article2 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-
     }
 
     .image-article3 {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-
-
     }
 
     .image-article4 {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+    }
 
+    .outer:hover img {
+        transform: scale(1.1);
+        z-index: 1;
+        transition: 0.5s;
+        opacity: 0.7;
     }
 }
