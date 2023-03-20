@@ -10,24 +10,42 @@
         integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
         crossorigin="">
     <link rel="stylesheet" href="css/style.css">
-    <title>La Bombonera - Mythical Stadiums</title>
+    <title>Bombonera - Mythical Stadiums</title>
 </head>
 <!-- next line will load the openstreetmap section via js/script.js after html loading -->
 
 <body onload="initMap(villes.bomb.lat, villes.bomb.long);">
     <!-- header about top menu-->
     <header class="stadium-header-container">
-        <img src="img/argentina-flag.png" alt="argentina flag">
-        <img src="img/boca-junior.png" alt="barca logo">
-        <div class="header-button">
-            <input type="button" onclick="window.location.href='index.html';" value="Home" class="navBackBtn">
+        <div class="leftSide-navBar">
+            <img src="img/argentina-flag.png" alt="argentina flag">
+            <img src="img/boca-junior.png" alt="boca-junior logo" class="logo">
+        </div>
+        <div class="ticker">
+            <div class="ticker-news">
+                <span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</span>
+                    <span>Tristique nulla aliquet enim tortor. Felis bibendum ut tristique et egestas...</span>
+                    <span>Semper risus in hendrerit gravida rutrum quisque non tellus orci. Lectus proin nibh nisl
+                        condimentum id venenatis...</span>
+                    <span>Elementum tempus egestas sed sed risus pretium quam...</span>
+                    <span>Arcu ac tortor dignissim convallis aenean et tortor. Quis ipsum suspendisse ultrices gravida
+                        dictum fusce ut....</span>
+                    <span>Vel facilisis volutpat est velit egestas dui id ornare arcu. Praesent semper feugiat nibh sed
+                        pulvinar...</span>
+                    <span>Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl...</span>
+                </span>
+            </div>
+        </div>
+        <div class="rightSide-navBar">
+            <input type="button" onclick="window.location.href='index.html';" value="Home" class="navBackBtn btnHome">
             <input type="button" id="goBack" value="Go Back" class="navBackBtn">
         </div>
     </header>
     <!-- div about stadium picture -->
     <div class="stadium-title-container stadium-bomb-container">
         <div class="stadium-title-text">
-            <span>La Bombonera</span><span>Stadium</span>
+            <span>Bombonera</span><span>Stadium</span>
         </div>
     </div>
     <!-- main page content-->

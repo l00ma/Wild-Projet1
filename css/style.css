@@ -69,15 +69,14 @@ div.info-container {
     color: var(--text-color);
 }
 
-main {
-    margin: 0 21px;
-}
 
 .city-paragraphe {
+    margin-left: 21px;
+    margin-right: 21px;
     text-align: justify;
     text-justify: inter-word;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 30px;
 }
 
@@ -113,10 +112,6 @@ div.home-home-container {
 
 .outer {
     position: relative;
-}
-
-.overlay {
-    display: none;
 }
 
 h1.home-stadium-title {
@@ -243,12 +238,12 @@ header.stadium-header-container {
     padding: 8px 16px 8px 16px;
     background-color: var(--primary);
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-div.header-button {
-    margin-right: 5px;
-    margin-left: 5px;
+.logo {
+    padding-left: 10px;
 }
 
 input {
@@ -267,6 +262,10 @@ input {
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
+}
+
+.btnHome {
+    margin-right: 10px;
 }
 
 section>div#map {
@@ -356,6 +355,10 @@ footer {
     display: none;
 }
 
+.ticker-news>* {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
 
     .main-menu {
@@ -394,6 +397,10 @@ footer {
         font-size: 48px;
     }
 
+    div.info-container {
+        margin: 0 20%;
+    }
+
     p {
         font-size: 24px;
     }
@@ -420,8 +427,8 @@ footer {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 10px;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .image-article1 {
@@ -449,5 +456,37 @@ footer {
         z-index: 1;
         transition: 0.5s;
         opacity: 0.7;
+    }
+
+    .ticker {
+        overflow: hidden;
+        width: 65%;
+        padding: 5px 0 5px;
+        left: 0;
+        font-family: 'Montserrat', Arial;
+    }
+
+    .ticker-news {
+        width: 7000px;
+        padding: 5px 0;
+        color: var(--background);
+        font-size: 18px;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    }
+
+    .ticker-news>* {
+        display: inline-block;
+        animation: news 80s infinite linear;
+    }
+
+    @keyframes news {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-4135px);
+        }
     }
 }

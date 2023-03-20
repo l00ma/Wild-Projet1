@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barcelona - Mythical Stadiums</title>
@@ -12,37 +12,56 @@
 
 <body>
   <header class="stadium-header-container">
-    <img src="img/spain-flag.png" alt="spain flag" />
-    <div class="header-button">
-      <input type="button" onclick="window.location.href='index.html';" value="Home" class="navBackBtn">
+    <div class="leftSide-navBar">
+      <img src="img/spain-flag.png" alt="spain flag" />
+    </div>
+    <div class="ticker">
+      <div class="ticker-news">
+        <span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</span>
+          <span>Tristique nulla aliquet enim tortor. Felis bibendum ut tristique et egestas...</span>
+          <span>Semper risus in hendrerit gravida rutrum quisque non tellus orci. Lectus proin nibh nisl
+            condimentum id venenatis...</span>
+          <span>Elementum tempus egestas sed sed risus pretium quam...</span>
+          <span>Arcu ac tortor dignissim convallis aenean et tortor. Quis ipsum suspendisse ultrices gravida
+            dictum fusce ut....</span>
+          <span>Vel facilisis volutpat est velit egestas dui id ornare arcu. Praesent semper feugiat nibh sed
+            pulvinar...</span>
+          <span>Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl...</span>
+        </span>
+      </div>
+    </div>
+    <div class="rightSide-navBar">
+      <input type="button" onclick="window.location.href='index.html';" value="Home" class="navBackBtn btnHome">
       <input type="button" id="goBack" value="Go Back" class="navBackBtn">
     </div>
   </header>
 
   <main>
-    <h1 class="city-name">Barcelona </h1>
-    <p class="city-paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Et laudantium voluptatum quisquam ipsa, sapiente eligendi
-      repudiandae rerum totam beatae quis reiciendis explicabo
-      minus fugit perspiciatis est earum. Iure, deleniti corporis!Lorem
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      Veniam rerum consequuntur laudantium debitis cupiditate velit
-      enim minus. Aspernatur, tempore repudiandae distinctio provident atque unde,
-      voluptatibus minima amet quisquam debitis quo! </p>
+    <div class="info-container">
+      <h1 class="city-name">Barcelona </h1>
+      <p class="city-paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Et laudantium voluptatum quisquam ipsa, sapiente eligendi
+        repudiandae rerum totam beatae quis reiciendis explicabo
+        minus fugit perspiciatis est earum. Iure, deleniti corporis!Lorem
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Veniam rerum consequuntur laudantium debitis cupiditate velit
+        enim minus. Aspernatur, tempore repudiandae distinctio provident atque unde,
+        voluptatibus minima amet quisquam debitis quo! </p>
 
-    <article class="article-container">
-      <img class="image-article1" src="img/barca1.jpg">
-      <img class="image-article2" src="img/barca2.jpg">
-      <img class="image-article3" src="img/barca3.jpg">
-      <img class="image-article4" src="img/barca4.jpg">
+      <article class="article-container">
+        <img class="image-article1" src="img/barca1.jpg" alt="barcelona city image1">
+        <img class="image-article2" src="img/barca2.jpg" alt="barcelona city image2">
+        <img class="image-article3" src="img/barca3.jpg" alt="barcelona city image3">
+        <img class="image-article4" src="img/barca4.jpg" alt="barcelona city image4">
 
-    </article>
-    <div class="section-buttons">
-      <a href="stadium_campnou.html" id="leftButton" class="buttonLeftClass">Visit Camp Nou</a>
-      <a href="club_barca.html" id="rightButton" class="buttonRightClass">About FC Barcelona</a>
+      </article>
+      <div class="section-buttons">
+        <a href="stadium_campnou.html" id="leftButton" class="buttonLeftClass">Visit Camp Nou</a>
+        <a href="club_barca.html" id="rightButton" class="buttonRightClass">About FC Barcelona</a>
+      </div>
+
     </div>
-
-
   </main>
   <footer>
     ©Axel-Fred-Zak@wilders - 03/2023
