@@ -90,7 +90,6 @@ div.info-container {
 .image-article4 {
     height: auto;
     width: 100%;
-    padding: 20px 0;
 }
 
 .home-title-container {
@@ -298,7 +297,7 @@ h1.club-title {
     width: 173px;
     height: 50px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 24px;
     border-width: 3px;
     border-color: var(--primary);
     padding-top: 5px;
@@ -358,6 +357,7 @@ footer {
 .ticker-news>* {
     display: none;
 }
+
 
 @media screen and (min-width: 768px) {
 

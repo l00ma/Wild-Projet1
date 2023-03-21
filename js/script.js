@@ -34,8 +34,8 @@ function goBack() {
 const btnBack = document.getElementById("goBack");
 btnBack.addEventListener("click", goBack);
 
-// css class swapping when mouse in over a button
-function styleOnRight() {
+// css class swapping when mouse in over a button getElementsByClassName()
+/* function styleOnRight() {
     const element = document.getElementById("rightButton");
     element.classList.replace("buttonRightClass", "buttonLeftClass");
 }
@@ -58,5 +58,5 @@ btnLeft.addEventListener("mouseleave", styleOffRight);
 
 const btnRight = document.getElementById("rightButton");
 btnRight.addEventListener("mouseenter", styleOnLeft);
-btnRight.addEventListener("mouseleave", styleOffLeft);
+btnRight.addEventListener("mouseleave", styleOffLeft); */
 
