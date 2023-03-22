@@ -15,7 +15,7 @@ let macarte = null;
 // Map init
 function initMap(lat, long) {
     // "myCard" object will be inserted in "map" id in index.html
-    myCard = L.map('map').setView([lat, long], 15);
+    myCard = L.map('map').setView([lat, long], 13);
     // Leaflet have to use tiles from openstreetmap.fr
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
         //openstreetmp zoom min and max values
