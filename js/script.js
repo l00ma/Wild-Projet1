@@ -39,32 +39,7 @@ function goBack() {
 const btnBack = document.getElementById("goBack");
 btnBack.addEventListener("click", goBack);
 
-// css class swapping when mouse in over a button getElementsByClassName()
-/* function styleOnRight() {
-    const element = document.getElementById("rightButton");
-    element.classList.replace("buttonRightClass", "buttonLeftClass");
-}
-function styleOffRight() {
-    const element = document.getElementById("rightButton");
-    element.classList.replace("buttonLeftClass", "buttonRightClass");
-}
-function styleOnLeft() {
-    const element = document.getElementById("leftButton");
-    element.classList.replace("buttonLeftClass", "buttonRightClass");
-}
-function styleOffLeft() {
-    const element = document.getElementById("leftButton");
-    element.classList.replace("buttonRightClass", "buttonLeftClass");
-}
-
-const btnLeft = document.getElementById("leftButton");
-btnLeft.addEventListener("mouseenter", styleOnRight);
-btnLeft.addEventListener("mouseleave", styleOffRight);
-
-const btnRight = document.getElementById("rightButton");
-btnRight.addEventListener("mouseenter", styleOnLeft);
-btnRight.addEventListener("mouseleave", styleOffLeft); */
-
+//slideshow section
 let slideIndex = 0;
 showSlides();
 
