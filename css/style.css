@@ -2,6 +2,7 @@
 
 :root {
     --primary: #4682b4;
+    --ticket: #df3e3e;
     --gray1: #778899;
     --gray-title: #708090;
     --gray-light: #cbced1;
@@ -333,7 +334,15 @@ h1.club-title {
     align-items: center;
 }
 
-.buttonLeftClass {
+.section-buttons-ticket {
+    margin: 0 0 64px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonLeftClass,
+.buttonTicket {
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -343,18 +352,34 @@ h1.club-title {
     border-style: solid;
     border-radius: 24px;
     border-width: 3px;
-    border-color: var(--primary);
     padding-top: 5px;
     text-decoration: none;
+    1
+}
+
+.buttonLeftClass {
+    border-color: var(--primary);
     color: var(--background);
     background: var(--background-btn);
-
 }
 
 .buttonLeftClass:hover {
     background: var(--background);
     color: var(--background-btn);
 }
+
+.buttonTicket {
+    border-color: var(--ticket);
+    color: var(--background);
+    background: var(--ticket);
+}
+
+.buttonTicket:hover {
+    background: var(--background);
+    color: var(--ticket);
+}
+
+
 
 footer {
     text-align: center;
