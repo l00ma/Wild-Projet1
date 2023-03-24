@@ -341,6 +341,13 @@ h1.club-title {
     align-items: center;
 }
 
+.section-buttons-ticket-top {
+    margin: 64px 0 64px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .buttonLeftClass,
 .buttonTicket {
     font-size: 20px;
@@ -354,7 +361,6 @@ h1.club-title {
     border-width: 3px;
     padding-top: 5px;
     text-decoration: none;
-    1
 }
 
 .buttonLeftClass {
